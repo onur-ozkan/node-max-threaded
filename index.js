@@ -9,6 +9,4 @@ const server = http.createServer((req, res) => {
   res.end(JSON.stringify({ message: 'Hello World' }));
 });
 
-server.listen(port + Number(process.env.INSTANCE_ID || 0), hostname, () => {
-  console.log(`Server running at http://${hostname}:${port}/`);
-});
+server.listen(port + Number(process.env.INSTANCE_ID || 0), hostname, () => {});
