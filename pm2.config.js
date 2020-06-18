@@ -3,7 +3,7 @@ module.exports = {
       {
         name: "stress_test",
         script: "./index.js",
-        instances: '4',
+        instances: 'max',
         instance_var: 'INSTANCE_ID',
         exec_mode: 'fork'
       }
